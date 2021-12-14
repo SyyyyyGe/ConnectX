@@ -5,13 +5,18 @@
 
 
 
-## 配置环境
+
+
+
+## 1. 配置环境
 
 ```
 !pip install 'kaggle-environments>=0.1.6'
 ```
 
-## 定义比赛并可以查看结果
+## 2. 复制我的def的机器人代码就可以
+
+## 3. 定义比赛并可以查看结果
 
 ```python
 def mean_reward(rewards):
@@ -33,7 +38,7 @@ print("Minimax vs MCTS:", mean_reward(evaluate("connectx", [Minimax_agent, MCTS_
 print("MCTS vs Minimax:", mean_reward(evaluate("connectx", [MCTS_agent, Minimax_agent], num_episodes=10)))
 ```
 
-## 提交文件
+## 4. 提交文件
 
 除了Q_learning需要训练很久之后，才可以提交，其他都可以直接提交，提交那个agent的函数定义就行。
 
